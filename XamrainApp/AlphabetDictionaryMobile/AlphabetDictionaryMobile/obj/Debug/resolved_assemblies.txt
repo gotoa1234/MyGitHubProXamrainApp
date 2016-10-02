@@ -1,0 +1,9 @@
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Debug\assemblies\AlphabetDictionaryMobile.dll
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Debug\assemblies\Mono.Android.dll
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Debug\assemblies\mscorlib.dll
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Debug\assemblies\System.Core.dll
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Debug\assemblies\System.dll
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Debug\assemblies\System.Xml.dll
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Debug\assemblies\System.Xml.Linq.dll
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Debug\assemblies\System.Runtime.Serialization.dll
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Debug\assemblies\System.ServiceModel.Internals.dll

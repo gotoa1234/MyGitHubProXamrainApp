@@ -1,0 +1,16 @@
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\bin\Debug\AlphabetDictionaryMobile.dll
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\bin\Debug\AlphabetDictionaryMobile.pdb
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\bin\Debug\AlphabetDictionaryMobile.AlphabetDictionaryMobile.apk
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\bin\Debug\AlphabetDictionaryMobile.AlphabetDictionaryMobile-Signed.apk
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Debug\AlphabetDictionaryMobile.csprojResolveAssemblyReference.cache
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Debug\AlphabetDictionaryMobile.dll
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Debug\AlphabetDictionaryMobile.pdb
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Debug\android\bin\AlphabetDictionaryMobile.AlphabetDictionaryMobile.apk
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Debug\res\layout\main.xml
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Debug\res\values\strings.xml
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Debug\res\drawable\icon.png
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Debug\R.cs.flag
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Debug\uploadflags.txt
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Debug\res\layout\newtoeic.xml
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Debug\AlphabetDictionaryMobile.dll.mdb
+C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\bin\Debug\AlphabetDictionaryMobile.dll.mdb
