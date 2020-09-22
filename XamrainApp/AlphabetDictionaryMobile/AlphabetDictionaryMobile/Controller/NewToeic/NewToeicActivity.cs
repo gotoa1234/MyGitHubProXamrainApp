@@ -78,13 +78,33 @@ namespace AlphabetDictionaryMobile.Controller.NewToeic
             string Output = "";
             try
             {
-                //build new db
-                string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), DBname);
-                var db = new SQLiteConnection(dbPath);
                 bool responsebool = false;
                 //取得線上版本資料
                 try
                 {
+                    //build new db
+                   //string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), DBname);
+
+                    //建立DB並且讀取資源
+                    string dbPath = Path.Combine(Android.OS.Environment.ExternalStorageDirectory.ToString(), DBname);
+                    // Check if your DB has already been extracted.
+                    if (!File.Exists(dbPath))
+                    {
+                        using (BinaryReader br = new BinaryReader(Android.App.Application.Context.Assets.Open(DBname)))
+                        {
+                            using (BinaryWriter bw = new BinaryWriter(new FileStream(dbPath, FileMode.Create)))
+                            {
+                                byte[] buffer = new byte[2048];
+                                int len = 0;
+                                while ((len = br.Read(buffer, 0, buffer.Length)) > 0)
+                                {
+                                    bw.Write(buffer, 0, len);
+                                }
+                            }
+                        }
+                    }
+                    var db = new SQLiteConnection(dbPath);
+                    
                     ServiceConnection.ServiceConnection ServiceGet = new ServiceConnection.ServiceConnection();
                     if (responsebool = ServiceGet.Get_DB())
                     {
@@ -92,9 +112,9 @@ namespace AlphabetDictionaryMobile.Controller.NewToeic
                         Output += string.Format("資料庫:{0} 取得成功", DBname);
                     }
                 }
-                catch
+                catch(Exception ex)
                 {
-
+                    Toast.MakeText(this, ex.Message, ToastLength.Short).Show();
                 }
 
                 if (responsebool == false)//表示Service撈取資料失敗，使用app上提供的資料庫

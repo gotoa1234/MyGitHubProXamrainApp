@@ -1,8 +1,0 @@
-C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Release\android\assets\AlphabetDictionaryMobile.dll
-C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Release\android\assets\Mono.Android.dll
-C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Release\android\assets\mscorlib.dll
-C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Release\android\assets\System.Core.dll
-C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Release\android\assets\System.dll
-C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Release\android\assets\System.Xml.dll
-C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Release\android\assets\System.Runtime.Serialization.dll
-C:\Users\Administrator2\Desktop\WebRtc TEst\AlphabetDictionaryMobile\AlphabetDictionaryMobile\obj\Release\android\assets\System.ServiceModel.Internals.dll

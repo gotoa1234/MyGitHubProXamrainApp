@@ -7,6 +7,7 @@ using Android.Widget;
 using Android.OS;
 using Android.Content.PM;
 using AlphabetDictionaryMobile.Controller.NewToeic;
+using Android;
 
 namespace AlphabetDictionaryMobile
 {
@@ -17,7 +18,8 @@ namespace AlphabetDictionaryMobile
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
+            //檢查權限
+            CheckAppPermissions();
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
@@ -39,6 +41,23 @@ namespace AlphabetDictionaryMobile
         {
             Intent intent = new Intent(this, typeof(NewToeicActivity));
             this.StartActivity(intent);
+        }
+
+        private void CheckAppPermissions()
+        {
+            if ((int)Build.VERSION.SdkInt < 23)
+            {
+                return;
+            }
+            else
+            {
+                if (PackageManager.CheckPermission(Manifest.Permission.ReadExternalStorage, PackageName) != Permission.Granted
+                    && PackageManager.CheckPermission(Manifest.Permission.WriteExternalStorage, PackageName) != Permission.Granted)
+                {
+                    var permissions = new string[] { Manifest.Permission.ReadExternalStorage, Manifest.Permission.WriteExternalStorage };
+                    RequestPermissions(permissions, 1);
+                }
+            }
         }
 
         #endregion
