@@ -41,6 +41,7 @@
     <AotAssemblies>false</AotAssemblies>
     <EnableLLVM>false</EnableLLVM>
     <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <AndroidKeyStore>false</AndroidKeyStore>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -91,7 +92,7 @@
     <Compile Include="Controller\Main\MainActivity.cs" />
     <Compile Include="Controller\NewToeic\NewToeicActivity.cs" />
     <Compile Include="Libary\ServiceConnection.cs" />
-    <Compile Include="Repository\DB_NewToeic.cs" />
+    <Compile Include="Repository\DBNewToeic.cs" />
     <Compile Include="Repository\ORMTable\Table_Index.cs" />
     <Compile Include="Repository\ORMTable\Table_Row.cs" />
     <Compile Include="Repository\ORMTable\VerbTable.cs" />

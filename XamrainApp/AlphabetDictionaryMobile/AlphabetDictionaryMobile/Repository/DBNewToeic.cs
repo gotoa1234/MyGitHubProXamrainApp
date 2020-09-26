@@ -1,23 +1,17 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using System.IO;
-using SQLite;
 using AlphabetDictionaryMobile.Repository.ORMTable;
+using SQLite;
 
 namespace AlphabetDictionaryMobile.Repository
 {
-    public class DB_NewToeic
+    public class DBNewToeic
     {
-        public string Get_Allrecord()
+        /// <summary>
+        /// 取得所有資料
+        /// </summary>
+        public string GetAllRecord()
         {
             string Output = "";
             try
@@ -46,9 +40,7 @@ namespace AlphabetDictionaryMobile.Repository
         /// <returns></returns>
         public List<Table_Index> Get_DbIndexTable()
         {
-            List<Table_Index> dbList = new List<Table_Index>();
-
-
+            var dbList = new List<Table_Index>();
             try
             {
                 string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "Alphabet.db");
@@ -67,6 +59,7 @@ namespace AlphabetDictionaryMobile.Repository
             }
             catch (Exception ex)
             {
+                throw new Exception(ex.Message);
             }
             return dbList;
         }
@@ -75,18 +68,18 @@ namespace AlphabetDictionaryMobile.Repository
         /// 取得資料表的資料內容
         /// </summary>
         /// <returns></returns>
-        public List<Table_Row> Get_MatchData(string Guid_refect)
+        public List<Table_Row> GetMatchData(string GuidRefect)
         {
             List<Table_Row> dbList = new List<Table_Row>();
             try
             {
                 string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "Alphabet.db");
                 var db = new SQLiteConnection(dbPath);
-                List<Object> Getrows = db.Query(new TableMapping(typeof(Table_Row)), string.Format("Select * from {0}", Guid_refect));
+                var Getrows = db.Query(new TableMapping(typeof(Table_Row)), string.Format("Select * from {0}", GuidRefect));
 
                 foreach (var row in Getrows)
                 {
-                    Table_Row single = new Table_Row();
+                    var single = new Table_Row();
                     //強制轉型 
                     single.Chinese = ((Table_Row)row).Chinese;
                     single.English = ((Table_Row)row).English;
@@ -95,11 +88,12 @@ namespace AlphabetDictionaryMobile.Repository
             }
             catch (Exception ex)
             {
+                throw new Exception(ex.Message);
             }
             return dbList;
         }
 
-        public string Get_IndexTableReflectName(string Tablename)
+        public string GetIndexTableReflectName(string Tablename)
         {
             try
             {
@@ -108,13 +102,11 @@ namespace AlphabetDictionaryMobile.Repository
                 var tablerows = db.Table<Table_Index>();
                 var get = tablerows.Where(o => o.TableName == Tablename).FirstOrDefault().Guid;
                 return get;
-
             }
             catch (Exception ex)
             {
+                throw new Exception(ex.Message);
             }
-
-            return "";
         }
     }
 }

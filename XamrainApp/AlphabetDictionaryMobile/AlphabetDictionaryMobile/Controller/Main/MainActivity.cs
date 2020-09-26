@@ -1,13 +1,11 @@
 ﻿using System;
-using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Android.OS;
-using Android.Content.PM;
 using AlphabetDictionaryMobile.Controller.NewToeic;
 using Android;
+using Android.App;
+using Android.Content;
+using Android.Content.PM;
+using Android.OS;
+using Android.Widget;
 
 namespace AlphabetDictionaryMobile
 {
@@ -43,6 +41,9 @@ namespace AlphabetDictionaryMobile
             this.StartActivity(intent);
         }
 
+        /// <summary>
+        /// 檢查權限，依照andriod 版本有不同的要求權限方式
+        /// </summary>
         private void CheckAppPermissions()
         {
             if ((int)Build.VERSION.SdkInt < 23)
